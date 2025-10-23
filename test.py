@@ -3,14 +3,6 @@ def get_book_text(text):
             file_contents = w.read()
             return file_contents
 
-def word_count():
-      file_contents = get_book_text("books/frankenstein.txt")
-      words=file_contents.split()
-      word_count=len(words)
-      print(f"Found {word_count} total words")
-
-word_count()
-
 def char_count():
       file_contents=get_book_text("books/frankenstein.txt")
       lower_chars=file_contents.lower()
@@ -20,8 +12,8 @@ def char_count():
                   char_count[i]+=1
             else:
                 char_count[i]=1
-      return char_count
-
+        return char_count
             
 
 
+     
